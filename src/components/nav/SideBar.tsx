@@ -41,7 +41,7 @@ export const SideBar = () => {
               <SideBarItem name="Message" icon={RiUser3Fill} link="#" />
             </li>
             <li>
-              <SideBarItem name="Admin Setting" icon={RiUser3Fill} link="#" />
+              <SideBarItem name="Admin Setting" icon={RiUser3Fill} link="/AdminView/AdminSettings" />
             </li>
           </ul>
         </div>
