@@ -4,20 +4,23 @@ import { useState } from 'react';
 
 
 export default function Home() {
-  const [selectedFile, setSelectedFile] = useState(null);
+  const [selectedImage, setSelectedImage] = useState(null);
+  const [previewImage, setPreviewImage] = useState(null);
 
-  const handleFileChange = (e) => {
-    setSelectedFile(e.target.files[0]);
+  const handleImageChange = (e) => {
+    const file = e.target.files[0];
+    setSelectedImage(file);
+    setPreviewImage(URL.createObjectURL(file));
   };
 
   const handleUpload = () => {
-    if (selectedFile) {
-      // Perform file upload logic here
-      console.log('Uploading file:', selectedFile);
+    if (selectedImage) {
+      // Perform image upload logic here
+      console.log('Uploading image:', selectedImage);
     } else {
-      console.log('No file selected.');
+      console.log('No image selected.');
     }
-  }
+  };
     return (
        <div>
         <h1 className='text-5xl font-bold mb-10 text-center'>Admin Settings</h1>
@@ -39,8 +42,12 @@ export default function Home() {
              
             <div className='w-3/12'>
                  <div>
-                  <input type="file" onChange={handleFileChange} />
-                  <button onClick={handleUpload}>Upload</button>
+                 <input type="file" accept="image/*" onChange={handleImageChange} />
+                  {previewImage && <img src={previewImage} alt="Preview" />}
+                  <div className='flex justify-center w-9/12 m-auto'>
+                  <button className='bg-blue-400 text-white px-5 py-4 text-xl rounded-2xl my-8' onClick={handleUpload}>Upload</button>
+                  </div>
+                 
                 </div>
 
             </div>
