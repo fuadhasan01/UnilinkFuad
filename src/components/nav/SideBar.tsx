@@ -29,7 +29,7 @@ export const SideBar = () => {
               <SideBarItem name="Dashboard" icon={FaHome} link="#" />
             </li>
             <li>
-            <SideBarItem name="Approval" icon={FaHome} link="#" />
+            <SideBarItem name="Approval" icon={FaHome} link="/AdminView/UniversityApprove" />
             </li>
             <li>
             <SideBarItem name="Registered University" icon={FaHome} link="#" />

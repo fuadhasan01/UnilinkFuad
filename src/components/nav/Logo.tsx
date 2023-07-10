@@ -12,7 +12,7 @@ const Logo = () => {
         className="mr-3"
         alt="Logo"
       />
-      <span className="self-center text-xl text-white font-semibold sm:text-2xl whitespace-nowrap dark:text-white">
+      <span className="self-center text-xl text-blue-900 font-semibold sm:text-2xl whitespace-nowrap dark:text-white">
         UniLink
       </span>
     </a>
