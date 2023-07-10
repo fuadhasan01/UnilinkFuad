@@ -4,9 +4,9 @@ import Image from 'next/image'
 
 const Logo = () => {
   return (
-    <a href="https://flowbite.com" className="flex ml-2 md:mr-24">
+    <a href="#" className="flex ml-2 md:mr-24">
       <Image
-        src="https://flowbite.com/docs/images/logo.svg"
+        src="https://cdn.vectorstock.com/i/preview-1x/22/82/success-education-logo-vector-892282.jpg"
         height={32}
         width={32}
         className="mr-3"
