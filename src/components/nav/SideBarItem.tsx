@@ -8,13 +8,13 @@ const SideBarItem = ({ name, badge, count, icon: Icon, link }) => {
   return (
     <Link
       href={link}
-      className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+      className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-blue-700 dark:hover:bg-gray-700"
     >
       <Icon
-        className="w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+        className="w-6 h-6 text-blue-500 transition duration-75 dark:text-blue-400 group-hover:text-gray-900 dark:group-hover:text-white"
         aria-hidden="true"
       />
-      <span className="ml-3">{name}</span>
+      <span className="ml-3 text-white">{name}</span>
       {(badge || count) && !(badge && count) && (
         <span
           className={`inline-flex items-center justify-center ml-3 text-sm font-medium rounded-full ${
