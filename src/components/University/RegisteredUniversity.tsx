@@ -11,9 +11,9 @@ const RegisteredUniversity = () => {
                <Image
                     src="https://upload.wikimedia.org/wikipedia/en/thumb/d/da/BUET_LOGO.svg/1200px-BUET_LOGO.svg.png"
                     alt="Description"
-                    width={100}
+                    width={200}
                     height={50}
-                    className="w-3/12 "
+                    className="w-3/12 ml-5"
                 />            
         </div>
     </div>
