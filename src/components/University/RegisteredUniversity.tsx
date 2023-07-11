@@ -5,7 +5,7 @@ const RegisteredUniversity = () => {
   return (
     <div className='flex items-center justify-between bg-gray-400 py-4 px-3 rounded-3xl text-white w-full my-7'>
         <div className='w-fit'>
-            <p className='text-sm'>Bangladesh University of Engineering and Technology</p>
+            <p className='text-lg'>Bangladesh University of Engineering and Technology</p>
         </div>
         <div>
                <Image
