@@ -8,7 +8,7 @@ export default function Home() {
             <div className="flex flex-col gap-6">
                 <h1 className="text-3xl mt-10 bg-gray-600 px-11 py-3 text-white rounded-lg">Registered University</h1>
                 
-                <div>
+                <div className="bg-white px-6 rounded-lg">
                 <RegisteredUniversity/>
                 <RegisteredUniversity/>
                 <RegisteredUniversity/>

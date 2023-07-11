@@ -3,9 +3,9 @@ import React from 'react'
 
 const RegisteredUniversity = () => {
   return (
-    <div className='flex items-center justify-between bg-blue-400 w-full'>
+    <div className='flex items-center justify-between bg-gray-400 py-4 px-3 rounded-3xl text-white w-full my-7'>
         <div className='w-fit'>
-            <p className='text-xs'>Bangladesh University of Engineering and Technology</p>
+            <p className='text-sm'>Bangladesh University of Engineering and Technology</p>
         </div>
         <div>
                <Image
@@ -13,7 +13,7 @@ const RegisteredUniversity = () => {
                     alt="Description"
                     width={100}
                     height={50}
-                    className="w-3/12 bg-red-500 "
+                    className="w-3/12 "
                 />            
         </div>
     </div>
